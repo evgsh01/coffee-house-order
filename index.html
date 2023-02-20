@@ -17,9 +17,30 @@
     </header>
 
     <section class="order__wrapper">
-        <div class="user_data">
-            <input id="surname" name="surname" type="text" placeholder="Введите Фамилию">
-            <input id="name" name="name" type="text" placeholder="Введите Имя">
+        <div class="waiter_data">
+            <div class="waiter_surname">
+                <label for="surname">Фамилия официанта</label>
+                <input id="surname" name="surname" type="text" placeholder="Введите фамилию официанта">
+            </div>
+            
+            <div class="waiter_name">
+                <label for="name">Имя официанта</label>
+                <input id="name" name="name" type="text" placeholder="Введите имя официанта">
+            </div>
+            
+            <div class="table">
+                <label for="serviced_table">Номер обслуживаемого столика</label>
+                <select name="table" id="serviced_table">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            
         </div>
         
         <div class="order__form">
@@ -64,8 +85,16 @@
                 <label>Яблочный тарт 100&#8381;</label>
                 <input type="text" id="tart" name="menu" value="0">
             </div>
-        </div>
 
+            <div class="order__container">
+                <input type="checkbox" id="ice_cream" name="menu" value="110">
+                <label>Мороженное <span class="type_ice_cream">(на выбор)</span> 110&#8381;</label>
+                <input type="text" id="ice_cream" name="menu" value="0">
+            </div>
+        </div>
+    </section>
+
+    <section class="order_total">
         <p>Итого: <span class="total">0</span>&#8381;</p>
 
         <button type="submit" class="order__submit">оформить заказ</button>
